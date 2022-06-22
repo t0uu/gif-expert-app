@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import GifExpertApp from './GifExpertApp';
+import './styles.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // El modo Strict ayuda a principalmente a identificar errores con código legacy, ayuda a ver si es el código correcto y el recomendado en React, detecta todo lo que es viejo. Solo se aplica en desarrollo
   <React.StrictMode>
-    <App />
+    <GifExpertApp/>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
